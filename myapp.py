@@ -49,8 +49,8 @@ def login():
         cur.close()
 
         if account:
-            session['user_id'] = account['id']
-            session['username'] = account['username']
+            session['user_id'] = account['id']        #cek session
+            session['username'] = account['username'] #cek session
             flash('Login berhasil.', 'success')
             return redirect(url_for('dashboard'))
         else:
@@ -65,7 +65,7 @@ def logout():
 
 @app.route('/dashboard', methods=['GET', 'POST'])
 def dashboard():
-    if 'user_id' not in session:
+    if 'user_id' not in session: #cek sessionn
         return redirect(url_for('login'))
 
     cur = mysql.connection.cursor()
