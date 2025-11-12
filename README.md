@@ -18,8 +18,9 @@
 
 ## 2. Cara menjalankan aplikasi
       1) Menjalankan dipython, harus memiliki python
-      2) installasi virtualenv (pip3 virtualenv env)
+      2) install virtualenv (pip3 virtualenv env)
       3) activate env (env\Script\activate)
+      4) install flask (pip3 install flask)
 
 ## 3. Dokumentasi (update soon)
 
